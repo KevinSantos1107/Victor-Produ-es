@@ -51,7 +51,7 @@ body.light-mode {
 }
 
 /* ===================== RESET ===================== */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
 html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
@@ -228,8 +228,6 @@ body.light-mode .hero-name .line2 {
   font-family: var(--font-body); font-weight: 600;
   font-size: 0.9rem; cursor: pointer; border: none;
   transition: all var(--tr);
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
 }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-primary:hover {
